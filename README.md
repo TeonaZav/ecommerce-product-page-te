@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - URL: https://app.netlify.com/sites/ecommerce-product-page-te/settings/general
-- URL: [Add live site URL here](https://your-live-site-url.com)
+- URL: https://teonazav.github.io/ecommerce-product-page-te/#
 
 ## My process
 
