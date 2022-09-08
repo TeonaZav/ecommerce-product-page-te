@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- URL: https://poetic-souffle-ececa2.netlify.app/#
+- URL: https://app.netlify.com/sites/ecommerce-product-page-te/settings/general
 - URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
