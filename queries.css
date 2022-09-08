@@ -1,0 +1,5 @@
+/* now we do need to hide navigation: it is hardest thing, though...  because in this case, if we whrite - "display:none", it won't allows transition to work and thats really annoying, i suppose. thats why we are doing below-mentiond things instead of just say "display:none". we will use opacity to hide element, but actually is not hidden in this case. this is the value we can animate.*/
+/*step 1.1 - it will hide navigation just visually*/
+
+/*step 2 - we are adding "nav-open" class to the header. this is the class that will be added and removed using javascript. and so whenever the navigation is open, "nav-open" will be present here on this header element. thats very very common technic when we build components like this which need to change state a little bit based on js later. so we gonna be able to whrite some very simple js which will simply add or remove this class here, depending whether the user clicked the navigation button or not.  so anyway, lets now pretend that navigation is currently open and than we can apply styles based on that.  
+    now the "nav-open" class is parent of "main-nav" class. so we can use it in our css like this: */

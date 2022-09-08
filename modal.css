@@ -1,0 +1,206 @@
+/********** MODAL **********/
+
+.shadow.hidden {
+  /* visibility: hidden; */
+  display: none;
+}
+.shadow {
+  z-index: 2;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-modal {
+  width: 350px;
+  height: 300px;
+  background: #fff;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.carousel-container {
+  border-radius: 0.8rem;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  width: 55rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.hideModal {
+  z-index: -1;
+  opacity: 0;
+  animation: hide 0.5s;
+
+  transform: scale(0);
+}
+@keyframes hide {
+  from {
+    z-index: 2;
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    z-index: -1;
+    transform: scale(0);
+    transform-origin: 30% 0;
+    opacity: 0;
+  }
+}
+.showModal {
+  opacity: 1;
+  z-index: 2;
+  animation: show 0.5s;
+  transform: scale(1);
+}
+@keyframes show {
+  from {
+    transform: scale(0);
+    transform-origin: 0 0;
+    opacity: 0;
+    z-index: -1;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 2;
+  }
+}
+.modal-box {
+  position: relative;
+  width: 100%;
+}
+.btn--close-modal {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 1rem;
+  top: -5rem;
+  cursor: pointer;
+}
+.icon-close {
+  width: 4rem;
+  height: 4rem;
+  fill: #ffffff;
+}
+
+/* carousel */
+
+.carousel {
+  width: 55rem;
+  height: 55rem;
+  overflow-x: hidden;
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 1.5rem;
+  z-index: 999;
+}
+
+.control {
+  top: 35%;
+  z-index: 1100;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5.6rem;
+  width: 5.6rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.prev-slide {
+  left: 0;
+  transform: translateX(-50%);
+}
+.next-slide {
+  right: 0;
+  transform: translateX(50%);
+}
+.carousel-slides {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  left: 0%;
+  /* transition: all 0.5s ease-in-out; */
+}
+.carousel-slide {
+  min-width: 55rem;
+  min-height: 55rem;
+}
+.thumb-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3.1rem;
+}
+
+.thumb {
+  width: 8.8rem;
+  height: 8.8rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.thumb--0 {
+  background-image: url(images/image-product-1-thumbnail.jpg);
+}
+.thumb--1 {
+  background-image: url(images/image-product-2-thumbnail.jpg);
+}
+.thumb--2 {
+  background-image: url(images/image-product-3-thumbnail.jpg);
+}
+.thumb--3 {
+  background-image: url(images/image-product-3-thumbnail.jpg);
+}
+.thumb--0.transluz {
+  box-shadow: 0 0 0 0.4rem #ff7e1b;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url(images/image-product-1-thumbnail.jpg);
+}
+.thumb--1.transluz {
+  box-shadow: 0 0 0 0.4rem #ff7e1b;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url(images/image-product-2-thumbnail.jpg);
+}
+.thumb--2.transluz {
+  box-shadow: 0 0 0 0.4rem #ff7e1b;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url(images/image-product-3-thumbnail.jpg);
+}
+.thumb--3.transluz {
+  box-shadow: 0 0 0 0.4rem #ff7e1b;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url(images/image-product-4-thumbnail.jpg);
+}
