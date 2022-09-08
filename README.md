@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- URL: https://app.netlify.com/sites/ecommerce-product-page-te/settings/general
+- URL: https://ecommerce-product-page-te.netlify.app/
 - URL: https://teonazav.github.io/ecommerce-product-page-te/#
 
 ## My process
